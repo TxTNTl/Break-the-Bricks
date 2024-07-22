@@ -1,6 +1,4 @@
 import tkinter as tk
-import pygame
-from tkinter import messagebox
 from Game import Game
 
 
@@ -36,9 +34,11 @@ class MapLoader(tk.Tk):
         except Exception as e:
             print(e)
 
+
 def main():
     mapLoader = MapLoader()
     mapLoader.mainloop()
+
 
 if __name__ == "__main__":
     main()

@@ -62,11 +62,14 @@ class MapEditor(tk.Tk):
         ls = [1] + [0 for _ in range(30)] + [1]
         for i in range(4):
             self.grid.append(ls)
-        with open(f"{text}.txt", "w") as file:
-            for row in self.grid:
-                file.write(" ".join(map(str, row)) + "\n")
-        messagebox.showinfo("Info", "Map saved successfully!")
-        self.quit()
+        try:
+            with open(f"{text}.txt", "w") as file:
+                for row in self.grid:
+                    file.write(" ".join(map(str, row)) + "\n")
+            messagebox.showinfo("Info", "Map saved successfully!")
+            self.quit()
+        except Exception as e:
+            messagebox.showinfo("提示", f"出现如下错误{e}")
 
     def load_grid(self):
         text = self.entry_line.get()
