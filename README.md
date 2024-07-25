@@ -32,6 +32,9 @@ Below is the english version.
 #### 篮球优化
 奖励方块释放出来的篮球很奇怪，但是能跑
 
+### 7.25更新
+本项目在macos上也能运行，但是比在win上运行卡一些。同时，地图编辑器的右键失效了。
+
 # English Version
 Advance Notice: You might notice some grammar mistakes or awkward phrasing due to my limited English skills.
 However, you may also find that it's not that bad.
@@ -74,3 +77,7 @@ Dividing the screen into multiple subsections helps reduce the number of paddles
 This will help increase the runtime efficiency.
 #### Basketball Optimization
 As it follows the game rule, the basketballs which are released by bonuses perform very wired.
+
+### Updates on July 25
+This game can also work well on mac os. However, it's not as fluent as it in win os.
+Meanwhile, the 'right-click' in MapCreator doesn't work.
